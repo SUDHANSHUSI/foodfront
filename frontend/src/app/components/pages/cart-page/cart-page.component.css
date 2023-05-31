@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem;
+  margin-top: 0.5rem;
+  align-items: flex-start;
+}
+ul {
+  display: flex;
+  flex: 1 0;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border: 1px solid blue;
+  border-radius: 1rem;
+  list-style: none;
+  margin: 0.1rem;
+  padding: 0rem;
+}
+ul li {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid green;
+  padding: 1rem;
+}
+ul li:last-child {
+  border: none;
+}
+li img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100rem;
+  object-fit: cover;
+}
+li div {
+  padding: 0.002px;
+}
+li div:not(:first-child) {
+  flex-basis: 18%;
+}
+li select {
+  width: 3rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+li .remove-button{
+    border: none;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    color: whitesmoke;
+    background-color: blue;
+    outline: none;
+    opacity: 0.9;
+}
+li  .remove-button:hover{
+    opacity: 0.7;
+    cursor:pointer;
+}
+.checkout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 3;
+    height: 10rem;
+    border: 1px solid #ffbbbb;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.8rem;
+}
+.checkout>div{
+    font-size: 1.4rem;
+    margin: 1rem;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.food-count{
+    margin-bottom:1.5rem;
+}
+.food-count::before{
+    content:"Count: ";
+    color:#e72929
+}
+.total-price::before{
+    content:"Price: ";
+    color: #e72929;
+}
+.checkout a {
+    padding: 1rem;
+    color: black;
+    background-color: #e72929;
+    display: block;
+    width: 95%;
+    border-radius: 1rem;
+    text-align: center;
+    opacity: 1;
+    justify-self: center;
+}
+.checkout a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
