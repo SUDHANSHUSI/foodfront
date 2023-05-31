@@ -1,37 +1,3 @@
-<!-- <div class="container">
-  <div class="details">
-    <app-title title="" Login></app-title>
-    <form [formGroup]="loginForm" (ngSubmit)="submit()">
-      <div class="input-container">
-        <label for="email">Email</label>
-        <div>
-          <input
-            type="email"
-            placeholder="abc@gmail.com"
-            formControlName="email"
-          />
-        </div>
-        <div class="error-list" *ngIf="loginForm.get('email').error && isSubmitted">
-            <div *ngIf="loginForm.get('email').errors.required">Email should not be empty</div>
-            <div *ngIf="loginForm.get('email').errors.email">Email is not correct</div>
-        </div>
-      </div>
-      <div class="input-container">
-        <label for="password">Password</label>
-        <div>
-          <input
-            type="password"
-            placeholder="********"
-            formControlName="password"
-          />
-        </div>
-      </div>
-      <div class="button">
-        <button type="submit">Login</button>
-      </div>
-    </form>
-  </div>
-</div> -->
 <div class="container">
   <div class="details">
     <app-title title="Login"></app-title>
